@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engle_Inventory
 {
-    interface IShippable
+    public interface IShippable
     {
         decimal ShipCost { get; }
         string Product { get; }
