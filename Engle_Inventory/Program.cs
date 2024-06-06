@@ -50,8 +50,9 @@ namespace Engle_Inventory
                     case 7:
                         Console.Clear();
                         Console.WriteLine(Supplier.Charges());
-                        Console.WriteLine("\nPress any key to continue.");
+                        Console.WriteLine("\nPress any key to finish.");
                         Console.ReadKey();
+                        Environment.Exit(0);
                         break;
                 }
             }while (true);
