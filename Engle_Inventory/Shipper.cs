@@ -8,44 +8,78 @@ namespace Engle_Inventory
 {
     public class Shipper
     {
-        private string[] _cart = new string[10];
+        private IShippable[] _cart = new IShippable[10];
         private int _counter = 0;
         public void Add(IShippable product)
         {
             if (_counter <= 10)
             {
-                _cart[_counter] = product.Product;
+                _cart[_counter] = product;
                 _counter++;
             }
+        }
+        public string Charges()
+        {
+            decimal[] charges = new decimal[5];
+            string[] names = ["Bicycle", "Lawn Mower", "Cell Phone", "Baseball Glove", "Crackers"];
+            decimal totalCharges = 0;
+            for (int i = 0; i < _counter; i++)
+            {
+                if (_cart[i].Product == names[0])
+                {
+                    charges[0]+=_cart[i].ShipCost;
+                }
+                else if (_cart[i].Product == names[1])
+                {
+                    charges[1] += _cart[i].ShipCost;
+                }
+                else if (_cart[i].Product == names[2])
+                {
+                    charges[2] += _cart[i].ShipCost;
+                }
+                else if (_cart[i].Product == names[3])
+                {
+                    charges[3] += _cart[i].ShipCost;
+                }
+                else if (_cart[i].Product == names[4])
+                {
+                    charges[4] += _cart[i].ShipCost;
+                }
+            }
+            for (int i = 0;i < charges.Length; i++)
+            {
+                totalCharges += charges[i];
+            }
+            return "Total shipping cost " + totalCharges.ToString("c");
         }
         public string Products()
         {
             int[] products = new int[5];
             string[] names = ["Bicycle", "Lawn Mower", "Cell Phone", "Baseball Glove", "Crackers"];
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < _counter; i++)
             {
-                if (_cart[i] == names[0])
+                if (_cart[i].Product == names[0])
                 {
                     products[0]++;
                 }
-                else if (_cart[i] == names[1])
+                else if (_cart[i].Product == names[1])
                 {
                     products[1]++;
                 }
-                else if (_cart[i] == names[2])
+                else if (_cart[i].Product == names[2])
                 {
                     products[2]++;
                 }
-                else if (_cart[i] == names[3])
+                else if (_cart[i].Product == names[3])
                 {
                     products[3]++;
                 }
-                else if (_cart[i] == names[4])
+                else if (_cart[i].Product == names[4])
                 {
                     products[4]++;
                 }
             }
-            for(int i  = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
             {
                 if (products[i] > 1 || products[i] == 0)
                 {
