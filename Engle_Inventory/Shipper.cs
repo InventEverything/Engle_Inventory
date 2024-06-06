@@ -25,27 +25,33 @@ namespace Engle_Inventory
             decimal totalCharges = 0;
             for (int i = 0; i < _counter; i++)
             {
+                //Bicycle
                 if (_cart[i].Product == names[0])
                 {
                     charges[0]+=_cart[i].ShipCost;
                 }
+                //Lawn Mower
                 else if (_cart[i].Product == names[1])
                 {
                     charges[1] += _cart[i].ShipCost;
                 }
+                //Cell Phone
                 else if (_cart[i].Product == names[2])
                 {
                     charges[2] += _cart[i].ShipCost;
                 }
+                //Baseball Glove
                 else if (_cart[i].Product == names[3])
                 {
                     charges[3] += _cart[i].ShipCost;
                 }
+                //Crackers
                 else if (_cart[i].Product == names[4])
                 {
                     charges[4] += _cart[i].ShipCost;
                 }
             }
+            //Totals shipping costs
             for (int i = 0;i < charges.Length; i++)
             {
                 totalCharges += charges[i];
@@ -58,27 +64,33 @@ namespace Engle_Inventory
             string[] names = ["Bicycle", "Lawn Mower", "Cell Phone", "Baseball Glove", "Crackers"];
             for (int i = 0; i < _counter; i++)
             {
+                //Bicycle
                 if (_cart[i].Product == names[0])
                 {
                     products[0]++;
                 }
+                //Lawn Mower
                 else if (_cart[i].Product == names[1])
                 {
                     products[1]++;
                 }
+                //Cell Phone
                 else if (_cart[i].Product == names[2])
                 {
                     products[2]++;
                 }
+                //Baseball Glove
                 else if (_cart[i].Product == names[3])
                 {
                     products[3]++;
                 }
+                //Crackers
                 else if (_cart[i].Product == names[4])
                 {
                     products[4]++;
                 }
             }
+            //Pluralizes
             for (int i = 0; i < 4; i++)
             {
                 if (products[i] > 1 || products[i] == 0)

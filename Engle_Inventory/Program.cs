@@ -56,7 +56,6 @@ namespace Engle_Inventory
                         break;
                 }
             }while (true);
-            //Console.WriteLine(supplier.Products());
         }
         static void Menu()
         {
