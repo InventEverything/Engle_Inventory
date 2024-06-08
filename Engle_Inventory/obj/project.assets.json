@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ian.engle\\.nuget\\packages\\": {}
+    "C:\\Users\\School Access\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ian.engle\\source\\repos\\Engle_Inventory\\Engle_Inventory\\Engle_Inventory.csproj",
+      "projectUniqueName": "C:\\Users\\School Access\\Source\\Repos\\Engle_Inventory\\Engle_Inventory\\Engle_Inventory.csproj",
       "projectName": "Engle_Inventory",
-      "projectPath": "C:\\Users\\ian.engle\\source\\repos\\Engle_Inventory\\Engle_Inventory\\Engle_Inventory.csproj",
-      "packagesPath": "C:\\Users\\ian.engle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ian.engle\\source\\repos\\Engle_Inventory\\Engle_Inventory\\obj\\",
+      "projectPath": "C:\\Users\\School Access\\Source\\Repos\\Engle_Inventory\\Engle_Inventory\\Engle_Inventory.csproj",
+      "packagesPath": "C:\\Users\\School Access\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\School Access\\Source\\Repos\\Engle_Inventory\\Engle_Inventory\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ian.engle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\School Access\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

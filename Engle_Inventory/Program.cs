@@ -13,33 +13,79 @@ namespace Engle_Inventory
             IShippable Crackers = new Crackers();
             Shipper Supplier = new Shipper();
             ConsoleKeyInfo Input;
-            int Selected;
+            int Selected = 0;
             do
             {
-                Menu();
+                Console.Clear();
+                Console.WriteLine("Choose from the following options:" +
+                    "\n1. Add a Bicycle to the shipment" +
+                    "\n2. Add a Lawn Mower to the shipment" +
+                    "\n3. Add a Cell Phone to the shipment" +
+                    "\n4. Add a Baseball Glove to the shipment" +
+                    "\n5. Add Crackers to the shipment" +
+                    "\n6. List Shipment Items" +
+                    "\n7. Compute Shipping Charges");
                 Input = Console.ReadKey();
-                Selected = Selection(Input);
+                switch (Input.Key)
+                {
+                    case ConsoleKey.D1:
+                        Selected = 1;
+                        break;
+                    case ConsoleKey.D2:
+                        Selected = 2;
+                        break;
+                    case ConsoleKey.D3:
+                        Selected = 3;
+                        break;
+                    case ConsoleKey.D4:
+                        Selected = 4;
+                        break;
+                    case ConsoleKey.D5:
+                        Selected = 5;
+                        break;
+                    case ConsoleKey.D6:
+                        Selected = 6;
+                        break;
+                    case ConsoleKey.D7:
+                        Selected = 7;
+                        break;
+                }
                 switch (Selected)
                 {
                     case 1:
                         Supplier.Add(Bicycles);
-                        Message(Bicycles);
+                        Console.Clear();
+                        Console.WriteLine("1 " + Bicycles.Product + " has been added." +
+                            "\n\nPress any key to return to the menu");
+                        Console.ReadKey();
                         break;
                     case 2:
                         Supplier.Add(Mowers);
-                        Message(Mowers);
+                        Console.Clear();
+                        Console.WriteLine("1 " + Mowers.Product + " has been added." +
+                            "\n\nPress any key to return to the menu");
+                        Console.ReadKey();
                         break;
                     case 3:
                         Supplier.Add(Phones);
-                        Message(Phones);
+                        Console.Clear();
+                        Console.WriteLine("1 " + Phones.Product + " has been added." +
+                            "\n\nPress any key to return to the menu");
+                        Console.ReadKey();
                         break;
                     case 4:
                         Supplier.Add(Gloves);
-                        Message(Gloves);
+                        Console.Clear();
+                        Console.WriteLine("1 " + Gloves.Product + " has been added." +
+                            "\n\nPress any key to return to the menu");
+                        Console.ReadKey();
                         break;
                     case 5:
                         Supplier.Add(Crackers);
-                        Message(Crackers);
+                        Console.Clear();
+                        Console.WriteLine("1 " + Crackers.Product + " has been added." +
+                            "\n\nPress any key to return to the menu");
+                        Console.ReadKey();
                         break;
                     case 6:
                         Console.Clear();
@@ -56,53 +102,6 @@ namespace Engle_Inventory
                         break;
                 }
             }while (true);
-        }
-        static void Menu()
-        {
-            Console.Clear();
-            Console.WriteLine("Choose from the following options:" +
-                "\n1. Add a Bicycle to the shipment" +
-                "\n2. Add a Lawn Mower to the shipment" +
-                "\n3. Add a Cell Phone to the shipment" +
-                "\n4. Add a Baseball Glove to the shipment" +
-                "\n5. Add Crackers to the shipment" +
-                "\n6. List Shipment Items" +
-                "\n7. Compute Shipping Charges");
-        }
-        static int Selection(ConsoleKeyInfo key)
-        {
-            switch (key.Key)
-            {
-                case ConsoleKey.D1:
-                    return 1;
-                    break;
-                case ConsoleKey.D2:
-                    return 2;
-                    break;
-                case ConsoleKey.D3:
-                    return 3;
-                    break;
-                case ConsoleKey.D4:
-                    return 4;
-                    break;
-                case ConsoleKey.D5:
-                    return 5;
-                    break;
-                case ConsoleKey.D6:
-                    return 6;
-                    break;
-                case ConsoleKey.D7:
-                    return 7;
-                    break;
-                default: return 0;
-            }
-        }
-        static void Message(IShippable product)
-        {
-            Console.Clear();
-            Console.WriteLine("1 "+product.Product+" has been added." +
-                "\n\nPress any key to return to the menu");
-            Console.ReadKey();
         }
     }
 }

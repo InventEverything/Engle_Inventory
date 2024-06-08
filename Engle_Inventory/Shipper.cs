@@ -12,7 +12,7 @@ namespace Engle_Inventory
         private int _counter = 0;
         public void Add(IShippable product)
         {
-            if (_counter <= 10)
+            if (_counter < 10)
             {
                 _cart[_counter] = product;
                 _counter++;

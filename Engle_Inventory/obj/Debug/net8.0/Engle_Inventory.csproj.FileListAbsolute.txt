@@ -13,3 +13,18 @@ C:\Users\ian.engle\source\repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0
 C:\Users\ian.engle\source\repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.pdb
 C:\Users\ian.engle\source\repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.genruntimeconfig.cache
 C:\Users\ian.engle\source\repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\ref\Engle_Inventory.dll
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\bin\Debug\net8.0\Engle_Inventory.exe
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\bin\Debug\net8.0\Engle_Inventory.deps.json
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\bin\Debug\net8.0\Engle_Inventory.runtimeconfig.json
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\bin\Debug\net8.0\Engle_Inventory.dll
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\bin\Debug\net8.0\Engle_Inventory.pdb
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.AssemblyInfoInputs.cache
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.AssemblyInfo.cs
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.csproj.CoreCompileInputs.cache
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.sourcelink.json
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.dll
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\refint\Engle_Inventory.dll
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.pdb
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\Engle_Inventory.genruntimeconfig.cache
+C:\Users\School Access\Source\Repos\Engle_Inventory\Engle_Inventory\obj\Debug\net8.0\ref\Engle_Inventory.dll
